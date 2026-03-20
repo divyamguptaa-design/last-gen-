@@ -1,0 +1,19 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0B0B0B"/>
+  <rect x="72" y="72" width="1056" height="756" rx="38" fill="url(#paint0_linear)"/>
+  <circle cx="344" cy="450" r="186" fill="#161616" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="14"/>
+  <circle cx="344" cy="450" r="124" fill="#101010" stroke="#FB4435" stroke-width="18"/>
+  <circle cx="344" cy="450" r="58" fill="#F4F0E8"/>
+  <path d="M470 350C613 330 723 354 818 429C904 495 980 512 1040 498" stroke="#D8D8D8" stroke-width="18" stroke-linecap="round"/>
+  <path d="M470 420C631 395 732 420 831 498C901 554 973 573 1040 560" stroke="#FB4435" stroke-width="24" stroke-linecap="round"/>
+  <path d="M470 494C630 474 741 500 838 574C903 624 968 644 1040 632" stroke="#8F8F8F" stroke-width="14" stroke-linecap="round"/>
+  <rect x="778" y="214" width="230" height="134" rx="24" fill="#151515" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="825" y="266" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="700">ROUND / AC</text>
+  <text x="825" y="309" fill="#FFFFFF" fill-opacity="0.66" font-family="Arial, sans-serif" font-size="28">WIRE RANGE</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="72" y1="72" x2="1128" y2="828" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151515"/>
+      <stop offset="1" stop-color="#1B1212"/>
+    </linearGradient>
+  </defs>
+</svg>

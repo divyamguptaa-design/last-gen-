@@ -1,0 +1,19 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0E0E0E"/>
+  <rect x="74" y="74" width="1052" height="752" rx="36" fill="url(#paint0_linear)"/>
+  <circle cx="348" cy="444" r="180" fill="#1B1B1B" stroke="#E5E5E5" stroke-opacity="0.18" stroke-width="16"/>
+  <circle cx="348" cy="444" r="120" fill="#101010" stroke="#FB4435" stroke-width="18"/>
+  <circle cx="348" cy="444" r="54" fill="#F5F1EB"/>
+  <path d="M456 322C580 292 667 318 758 376C862 442 965 467 1042 450" stroke="#FB4435" stroke-width="26" stroke-linecap="round"/>
+  <path d="M454 390C578 360 673 385 761 442C846 497 945 531 1042 518" stroke="#F5F1EB" stroke-opacity="0.9" stroke-width="18" stroke-linecap="round"/>
+  <path d="M456 462C605 432 690 466 794 534C863 579 961 608 1042 594" stroke="#6C6C6C" stroke-width="14" stroke-linecap="round"/>
+  <rect x="782" y="212" width="228" height="132" rx="24" fill="#151515" stroke="#FFFFFF" stroke-opacity="0.1"/>
+  <text x="822" y="266" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="34" font-weight="700">HOUSEHOLD</text>
+  <text x="822" y="307" fill="#FFFFFF" fill-opacity="0.68" font-family="Arial, sans-serif" font-size="28">MULTISTRAND</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="74" y1="74" x2="1126" y2="826" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151515"/>
+      <stop offset="1" stop-color="#1F1010"/>
+    </linearGradient>
+  </defs>
+</svg>

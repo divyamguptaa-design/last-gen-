@@ -1,0 +1,20 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="48" fill="#0C1014"/>
+  <rect x="70" y="70" width="1060" height="760" rx="40" fill="url(#paint0_linear)"/>
+  <circle cx="312" cy="450" r="184" fill="#11161A" stroke="#FFFFFF" stroke-opacity="0.12" stroke-width="16"/>
+  <circle cx="312" cy="450" r="118" fill="#0D1216" stroke="#FB4435" stroke-width="16"/>
+  <circle cx="312" cy="450" r="52" fill="#D9E5F2"/>
+  <path d="M420 364C522 344 611 365 713 431C820 500 919 521 1036 498" stroke="#FB4435" stroke-width="24" stroke-linecap="round"/>
+  <path d="M420 438C553 417 636 450 744 520C827 574 930 607 1037 586" stroke="#9FD3FF" stroke-width="16" stroke-linecap="round"/>
+  <path d="M0 660C125 590 232 690 352 660C457 632 534 531 665 564C807 599 912 706 1200 586V900H0V660Z" fill="#10202B"/>
+  <path d="M0 724C148 680 257 764 360 738C498 702 612 607 732 633C864 662 962 762 1200 662" stroke="#6FB6E9" stroke-opacity="0.55" stroke-width="10"/>
+  <rect x="780" y="202" width="230" height="136" rx="24" fill="#10171D" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <text x="820" y="258" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="36" font-weight="700">SUBMERSIBLE</text>
+  <text x="820" y="300" fill="#FFFFFF" fill-opacity="0.66" font-family="Arial, sans-serif" font-size="28">PUMP WIRE</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="70" y1="70" x2="1130" y2="830" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12191F"/>
+      <stop offset="1" stop-color="#1A0F10"/>
+    </linearGradient>
+  </defs>
+</svg>
