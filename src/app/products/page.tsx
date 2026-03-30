@@ -73,7 +73,7 @@ export default function ProductsPage() {
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
                 <PrimaryButton href="/#contact">Request a Quote</PrimaryButton>
-                <SecondaryButton href="https://wa.me/919900000000?text=Hello%20Gen-5%2C%20I%20want%20details%20about%20your%20products.">
+                <SecondaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20want%20details%20about%20your%20products.">
                   Ask on WhatsApp
                 </SecondaryButton>
               </div>
@@ -176,7 +176,7 @@ export default function ProductsPage() {
                     </div>
                     <div className="mt-7 flex flex-col gap-3 sm:flex-row">
                       <PrimaryButton href="/#contact">Get Quote</PrimaryButton>
-                      <SecondaryButton href="https://wa.me/919900000000?text=Hello%20Gen-5%2C%20I%20want%20details%20about%20this%20product.">
+                      <SecondaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20want%20details%20about%20this%20product.">
                         Enquire Now
                       </SecondaryButton>
                     </div>

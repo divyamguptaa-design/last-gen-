@@ -1,5 +1,4 @@
 export const trustBadges = [
-  "ISO Certified",
   "Fire Resistant",
   "Multi-Strand Flexible",
   "Industrial Grade",
@@ -49,7 +48,6 @@ export const features = [
 export const stats = [
   { value: "10,000+", label: "Installations completed" },
   { value: "500+", label: "Dealer relationships" },
-  { value: "ISO", label: "Certified quality systems" },
   { value: "24 hrs", label: "Fast quote turnaround" },
 ];
 

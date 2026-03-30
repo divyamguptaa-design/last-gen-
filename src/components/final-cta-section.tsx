@@ -1,4 +1,5 @@
-import { Container, PrimaryButton, SecondaryButton } from "@/components/ui";
+import Link from "next/link";
+import { Container, PrimaryButton } from "@/components/ui";
 
 export function FinalCtaSection() {
   return (
@@ -25,10 +26,16 @@ export function FinalCtaSection() {
                 Call, WhatsApp, or request pricing today for faster consultation and supply support.
               </p>
               <div className="mt-6 flex flex-col gap-3 sm:flex-row lg:flex-col">
-                <PrimaryButton href="tel:+919900000000">Request a Quote</PrimaryButton>
-                <SecondaryButton href="https://wa.me/919900000000?text=Hello%20Gen-5%2C%20I%20need%20a%20quote.">
+                <PrimaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20need%20a%20quote.">
+                  Request a Quote
+                </PrimaryButton>
+                <Link
+                  href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20need%20a%20quote."
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-[#25D366] px-6 py-3 text-sm font-bold !text-white shadow-sm transition duration-200 hover:-translate-y-0.5 hover:bg-[#20bd5c]"
+                >
+                  <span className="inline-flex h-2.5 w-2.5 rounded-full bg-white" />
                   Contact on WhatsApp
-                </SecondaryButton>
+                </Link>
               </div>
             </div>
           </div>

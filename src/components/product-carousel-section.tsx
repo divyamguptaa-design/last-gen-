@@ -2,7 +2,9 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { ArrowRightIcon } from "@/components/icons";
 import { Container, PrimaryButton, SecondaryButton } from "@/components/ui";
 
 const slides = [
@@ -49,6 +51,37 @@ const quickLinkStyles = [
 
 export function ProductCarouselSection() {
   const [activeIndex, setActiveIndex] = useState(0);
+  const router = useRouter();
+
+  function goToPreviousSlide() {
+    setActiveIndex((current) => (current - 1 + slides.length) % slides.length);
+  }
+
+  function goToNextSlide() {
+    setActiveIndex((current) => (current + 1) % slides.length);
+  }
+
+  function handleQuickLinkClick(label: string) {
+    switch (label) {
+      case "New Range":
+        setActiveIndex(0);
+        break;
+      case "Best Seller":
+        setActiveIndex(2);
+        break;
+      case "Safe Wiring":
+        setActiveIndex(0);
+        break;
+      case "Dealer Support":
+        router.push("/contact");
+        break;
+      case "Bulk Orders":
+        router.push("/contact");
+        break;
+      default:
+        break;
+    }
+  }
 
   useEffect(() => {
     const timer = window.setInterval(() => {
@@ -70,6 +103,7 @@ export function ProductCarouselSection() {
                 <button
                   key={label}
                   type="button"
+                  onClick={() => handleQuickLinkClick(label)}
                   className={`rounded-full border px-4 py-2 transition hover:-translate-y-0.5 ${quickLinkStyles[quickLinks.indexOf(label)]}`}
                 >
                   {label}
@@ -77,9 +111,12 @@ export function ProductCarouselSection() {
               ))}
             </div>
 
-            <div className="w-full max-w-xl rounded-full border border-black/8 bg-brand-sand px-5 py-3 text-sm text-black/45">
+            <Link
+              href="/products"
+              className="w-full max-w-xl rounded-full border border-black/8 bg-brand-sand px-5 py-3 text-sm text-black/45 transition hover:border-brand-red/30 hover:text-brand-charcoal"
+            >
               Search product categories, cable types, or installation use cases
-            </div>
+            </Link>
           </div>
 
           <div className="relative overflow-hidden bg-[radial-gradient(circle_at_center,rgba(229,57,53,0.12),transparent_28%),linear-gradient(135deg,#fffdfc_0%,#fff7f4_38%,#ffefeb_100%)] p-5 md:p-8">
@@ -95,6 +132,24 @@ export function ProductCarouselSection() {
                     sizes="(max-width: 1280px) 100vw, 42vw"
                     className="object-cover transition duration-500"
                   />
+                </div>
+                <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between">
+                  <button
+                    type="button"
+                    onClick={goToPreviousSlide}
+                    className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white/92 text-brand-charcoal shadow-sm transition hover:border-brand-red/35 hover:text-brand-red"
+                    aria-label="Previous slide"
+                  >
+                    <ArrowRightIcon className="h-4 w-4 rotate-180" />
+                  </button>
+                  <button
+                    type="button"
+                    onClick={goToNextSlide}
+                    className="inline-flex h-12 w-12 items-center justify-center rounded-full border border-black/10 bg-white/92 text-brand-charcoal shadow-sm transition hover:border-brand-red/35 hover:text-brand-red"
+                    aria-label="Next slide"
+                  >
+                    <ArrowRightIcon className="h-4 w-4" />
+                  </button>
                 </div>
               </div>
 
@@ -180,6 +235,30 @@ export function ProductCarouselSection() {
                   >
                     View all products
                   </Link>
+                </div>
+
+                <div className="grid gap-3 sm:grid-cols-3">
+                  {slides.map((slide, index) => (
+                    <button
+                      key={`${slide.category}-card`}
+                      type="button"
+                      onClick={() => setActiveIndex(index)}
+                      className={`rounded-[1.25rem] border p-3 text-left transition ${
+                        activeIndex === index
+                          ? "border-brand-red bg-brand-red/8 shadow-sm"
+                          : "border-black/8 bg-white/80 hover:border-brand-red/30"
+                      }`}
+                    >
+                      <p className="text-sm font-bold text-brand-charcoal">{slide.category}</p>
+                      <p className="mt-1 text-xs leading-6 text-black/58">
+                        {index === 0
+                          ? "Multistrand wire"
+                          : index === 1
+                            ? "Submersible wire"
+                            : "Round wire"}
+                      </p>
+                    </button>
+                  ))}
                 </div>
               </div>
             </div>

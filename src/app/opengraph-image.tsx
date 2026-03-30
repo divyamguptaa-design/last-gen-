@@ -64,7 +64,7 @@ export default function OpenGraphImage() {
                 "radial-gradient(circle at top, rgba(251,68,53,0.16), transparent 40%), #ffffff",
             }}
           >
-            {["ISO Certified", "Fire Resistant", "Multi-Strand Flexible", "Trusted Dealer Network"].map(
+            {["Fire Resistant", "Multi-Strand Flexible", "Industrial Grade", "Trusted Dealer Network"].map(
               (item) => (
                 <div
                   key={item}

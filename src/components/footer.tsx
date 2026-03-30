@@ -47,7 +47,7 @@ export function Footer() {
               <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
                 Instagram
               </a>
-              <a href="https://wa.me/919900000000?text=Hello%20Gen-5" target="_blank" rel="noreferrer">
+              <a href="https://wa.me/919315946113?text=Hello%20Gen-5" target="_blank" rel="noreferrer">
                 WhatsApp
               </a>
             </div>

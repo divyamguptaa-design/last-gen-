@@ -2,7 +2,6 @@ import { CompanySchema } from "@/components/company-schema";
 import { FinalCtaSection } from "@/components/final-cta-section";
 import { Footer } from "@/components/footer";
 import { HeroSection } from "@/components/hero-section";
-import { ProblemSection } from "@/components/problem-section";
 import { ProcessSection } from "@/components/process-section";
 import { ProductCarouselSection } from "@/components/product-carousel-section";
 import { SiteNavbar } from "@/components/site-navbar";
@@ -23,7 +22,6 @@ export default function Home() {
       <main className="overflow-x-hidden">
         <HeroSection />
         <ProductCarouselSection />
-        <ProblemSection />
         <SolutionSection />
         <ValueGridSection />
         <SocialProofSection />

@@ -55,7 +55,7 @@ export default function ContactPage() {
                 planning. The contact page is designed to make inquiry flow simple and direct.
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <PrimaryButton href="https://wa.me/919900000000?text=Hello%20Gen-5%2C%20I%20want%20to%20make%20an%20inquiry.">
+                <PrimaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20want%20to%20make%20an%20inquiry.">
                   Start on WhatsApp
                 </PrimaryButton>
                 <SecondaryButton href="/products">Browse Products</SecondaryButton>
@@ -128,7 +128,7 @@ export default function ContactPage() {
                   It&apos;s the quickest way to discuss product categories, quantities, and project details.
                 </p>
                 <div className="mt-6">
-                  <PrimaryButton href="https://wa.me/919900000000?text=Hello%20Gen-5%2C%20I%20need%20help%20with%20my%20wire%20requirement.">
+                  <PrimaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20need%20help%20with%20my%20wire%20requirement.">
                     Open WhatsApp
                   </PrimaryButton>
                 </div>
