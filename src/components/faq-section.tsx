@@ -1,16 +1,24 @@
 import { SectionHeading } from "@/components/section-heading";
-import { Container } from "@/components/ui";
+import { Container, SecondaryButton } from "@/components/ui";
 import { faqs } from "@/lib/content";
 
-export function FaqSection() {
+export function FaqSection({
+  showHeading = true,
+  showPageButton = true,
+}: {
+  showHeading?: boolean;
+  showPageButton?: boolean;
+}) {
   return (
     <section id="faq" className="py-20 md:py-24">
       <Container className="space-y-10">
-        <SectionHeading
-          eyebrow="FAQ"
-          title="Answers to common questions before you request a quote."
-          description="A strong FAQ reduces hesitation, handles common objections, and supports better conversion from the final CTA."
-        />
+        {showHeading ? (
+          <SectionHeading
+            eyebrow="FAQ"
+            title="Answers to common questions before you request a quote."
+            description="A strong FAQ reduces hesitation, handles common objections, and supports better conversion from the final CTA."
+          />
+        ) : null}
 
         <div className="space-y-4">
           {faqs.map((item) => (
@@ -25,6 +33,12 @@ export function FaqSection() {
             </details>
           ))}
         </div>
+
+        {showPageButton ? (
+          <div className="flex justify-center pt-2">
+            <SecondaryButton href="/faq">Open FAQ Page</SecondaryButton>
+          </div>
+        ) : null}
       </Container>
     </section>
   );

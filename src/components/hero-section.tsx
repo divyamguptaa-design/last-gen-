@@ -12,6 +12,11 @@ const showcaseSlides = [
     label: "Packaging view",
   },
   {
+    src: "/brand/showcase-extra.jpeg",
+    alt: "Additional Gen-5 product showcase image",
+    label: "Product showcase",
+  },
+  {
     src: "/products/wire-bundle.jpeg",
     alt: "Gen-5 wire bundle",
     label: "Wire bundle",
@@ -72,7 +77,7 @@ export function HeroSection() {
 
             <div className="flex flex-col gap-4 sm:flex-row">
               <PrimaryButton href="#contact">Get Quote</PrimaryButton>
-              <SecondaryButton href="#features">Explore Products</SecondaryButton>
+              <SecondaryButton href="/products">Explore Products</SecondaryButton>
             </div>
 
             <div className="flex flex-wrap gap-3">

@@ -121,9 +121,9 @@ export const benefits = [
 
 export const faqs = [
   {
-    question: "What makes Gen-5 wires safer than low-cost alternatives?",
+    question: "What makes Gen-5 wires safer and cost effective?",
     answer:
-      "Gen-5 focuses on durable insulation, dependable conductor quality, and fire-resistant performance that supports safer long-term usage.",
+      "We are able to deliver high-quality products at competitive costs due to our horizontally integrated operations, encompassing everything from raw material procurement to the production of finished goods.",
   },
   {
     question: "Are these wires suitable for residential and industrial use?",

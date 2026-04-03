@@ -32,6 +32,8 @@ yarn-error.log*
 .pnpm-debug.log*
 preview.log
 preview.err
+preview-3001.log
+preview-3001.err
 
 # env files (can opt-in for committing if needed)
 .env*

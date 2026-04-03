@@ -10,33 +10,68 @@ import { Container, PrimaryButton, SecondaryButton } from "@/components/ui";
 const slides = [
   {
     category: "Household Wiring",
+    subtitle: "Multistrand wire",
     title: "Multistrand wires made for safer day-to-day power flow.",
     description:
       "Flexible copper performance for homes, apartments, and interior electrical runs where reliability and clean installation both matter.",
     image: "/products/multistrand-wire.webp",
     imageAlt: "Multistrand household wire product image",
     badges: ["Flexible", "Fire-conscious", "Home-ready"],
-    offer: "Fast dealer support for high-demand residential orders",
+    offer: "Get it customised as per your requirement",
   },
   {
-    category: "Water Pump Range",
+    category: "Submersible Wire",
+    subtitle: "Submersible wire",
     title: "Submersible wires built for demanding pump applications.",
-    description:
-      "Durable insulation and steady performance for projects that need dependable cable strength in tough operating conditions.",
+    description: "",
     image: "/products/submersible-wire.jpg",
     imageAlt: "Submersible wire product image",
     badges: ["Pump-ready", "Durable", "Heavy-duty"],
-    offer: "Preferred for water pump installations and bulk supply needs",
+    offer: "Can be customised as per demand",
   },
   {
-    category: "Cooling & Appliance",
+    category: "Round A/C Wires",
+    subtitle: "Round wire",
     title: "Round and AC wires designed for clean routing and confidence.",
     description:
       "A practical wire choice for appliance connections and cooling applications with dependable conductivity and finish quality.",
     image: "/products/round-wire.webp",
     imageAlt: "Round and AC wire product image",
     badges: ["AC-ready", "Reliable", "Neat routing"],
-    offer: "Built to support everyday appliance and HVAC requirements",
+    offer: "Can be customised as per demand",
+  },
+  {
+    category: "Hook Up Wires",
+    subtitle: "Hook up wire",
+    title: "Hook up wires for control panels and precision wiring routes.",
+    description:
+      "Color-coded hook up wires that keep panel wiring organized, flexible, and easy to trace across control systems.",
+    image: "/products/hookup-wires.png",
+    imageAlt: "Hook up wires product image",
+    badges: ["Color-coded", "Flexible", "Panel-ready"],
+    offer: "Clean routing for control panels, testing rigs, and instrumentation",
+  },
+  {
+    category: "Coaxial Cable",
+    subtitle: "RG6 coaxial",
+    title: "Coaxial cable engineered for steady signal transmission.",
+    description:
+      "Reliable RG6 coaxial cable designed for CCTV, TV, and data distribution with consistent shielding performance.",
+    image: "/products/coaxial-cable.jpeg",
+    imageAlt: "Coaxial cable product image",
+    badges: ["Shielded", "Signal-safe", "RG6 grade"],
+    offer: "Ideal for residential and commercial signal distribution",
+  },
+  {
+    category: "Twisted Pair Wire",
+    subtitle: "Twisted pair",
+    title: "Twisted pair wiring to reduce noise and signal loss.",
+    description:
+      "Paired conductors improve signal integrity and help cut interference across longer wiring runs.",
+    image: "/products/twisted-pair-wire.jpg",
+    imageAlt: "Twisted pair wire product image",
+    badges: ["Noise control", "Balanced", "Long-run ready"],
+    offer: "Reliable choice for control systems and low-voltage networks",
   },
 ];
 
@@ -130,7 +165,7 @@ export function ProductCarouselSection() {
                     fill
                     priority={activeIndex === 0}
                     sizes="(max-width: 1280px) 100vw, 42vw"
-                    className="object-cover transition duration-500"
+                    className="object-contain bg-white/90 p-4 transition duration-500"
                   />
                 </div>
                 <div className="absolute bottom-8 left-8 right-8 flex items-center justify-between">
@@ -196,27 +231,10 @@ export function ProductCarouselSection() {
 
                 <div className="flex flex-col gap-3 sm:flex-row">
                   <PrimaryButton href="/products">Explore Catalog</PrimaryButton>
-                  <SecondaryButton href="/#contact">Get Quote Today</SecondaryButton>
+                  <SecondaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20need%20a%20quote.">
+                    Get Quote Today
+                  </SecondaryButton>
                 </div>
-
-                <div className="flex flex-wrap items-center gap-3 pt-2">
-                  {slides.map((slide, index) => (
-                    <button
-                      key={slide.category}
-                      type="button"
-                      onClick={() => setActiveIndex(index)}
-                      className={`rounded-full px-4 py-2 text-sm font-semibold transition ${
-                        activeIndex === index
-                          ? "bg-brand-red text-white"
-                          : "border border-black/8 bg-white/80 text-black/65 hover:text-brand-charcoal"
-                      }`}
-                      aria-label={`Show ${slide.category} slide`}
-                    >
-                      {slide.category}
-                    </button>
-                  ))}
-                </div>
-
                 <div className="flex items-center gap-3">
                   {slides.map((slide, index) => (
                     <button
@@ -251,11 +269,7 @@ export function ProductCarouselSection() {
                     >
                       <p className="text-sm font-bold text-brand-charcoal">{slide.category}</p>
                       <p className="mt-1 text-xs leading-6 text-black/58">
-                        {index === 0
-                          ? "Multistrand wire"
-                          : index === 1
-                            ? "Submersible wire"
-                            : "Round wire"}
+                        {slide.subtitle}
                       </p>
                     </button>
                   ))}

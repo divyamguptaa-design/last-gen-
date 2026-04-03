@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Footer } from "@/components/footer";
-import { ArrowRightIcon, CableIcon, CheckIcon, ShieldIcon } from "@/components/icons";
+import { ArrowRightIcon, CableIcon } from "@/components/icons";
 import { SiteNavbar } from "@/components/site-navbar";
-import { Container, PrimaryButton, SecondaryButton } from "@/components/ui";
+import { Container, PrimaryButton } from "@/components/ui";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 
 const products = [
@@ -43,6 +43,42 @@ const products = [
       "Built for steady performance under regular load",
     ],
   },
+  {
+    name: "Hook Up Wires",
+    image: "/products/hookup-wires.png",
+    imageAlt: "Gen-5 hook up wires product photo",
+    description:
+      "Color-coded hook up wires for panels, control systems, and precision wiring where clean routing matters.",
+    points: [
+      "Easy identification with multiple color options",
+      "Flexible insulation for tight routing",
+      "Ideal for control panels and electronics",
+    ],
+  },
+  {
+    name: "Coaxial Cable (RG6)",
+    image: "/products/coaxial-cable.jpeg",
+    imageAlt: "Gen-5 coaxial cable product photo",
+    description:
+      "High-quality coaxial cable built for consistent signal transmission in residential and commercial installs.",
+    points: [
+      "Stable signal quality with clean shielding",
+      "Suitable for TV, CCTV, and data distribution",
+      "Durable jacket for long service life",
+    ],
+  },
+  {
+    name: "Twisted Pair Wire",
+    image: "/products/twisted-pair-wire.jpg",
+    imageAlt: "Gen-5 twisted pair wire product photo",
+    description:
+      "Twisted pair wiring engineered to reduce noise and improve signal integrity for structured runs.",
+    points: [
+      "Noise reduction with paired conductors",
+      "Consistent performance for long runs",
+      "Neat, reliable wiring for control systems",
+    ],
+  },
 ];
 
 export const metadata: Metadata = {
@@ -65,17 +101,15 @@ export default function ProductsPage() {
                 Product Range
               </p>
               <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-brand-charcoal sm:text-5xl lg:text-6xl">
-                Wires built for homes, pumps, and cooling applications.
+                Deal in all type of wires and cables.
               </h1>
               <p className="mt-6 text-lg leading-8 text-black/72">
-                Explore the Gen-5 product lineup with dependable options for household wiring,
-                submersible pump installations, and round or AC wire requirements.
+                <span className="font-bold">You need it we&apos;ll make it</span>
               </p>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <PrimaryButton href="/#contact">Request a Quote</PrimaryButton>
-                <SecondaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20want%20details%20about%20your%20products.">
-                  Ask on WhatsApp
-                </SecondaryButton>
+                <PrimaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20need%20a%20quote.">
+                  Request a Quote
+                </PrimaryButton>
               </div>
             </div>
 
@@ -124,68 +158,6 @@ export default function ProductsPage() {
           </Container>
         </section>
 
-        <section className="py-20 md:py-24">
-          <Container className="space-y-10">
-            <div className="max-w-2xl">
-              <p className="inline-flex rounded-full border border-brand-red/20 bg-brand-red/10 px-4 py-1 text-sm font-semibold uppercase tracking-[0.26em] text-brand-red">
-                Products
-              </p>
-              <h2 className="mt-4 text-3xl font-extrabold tracking-tight text-brand-charcoal md:text-5xl">
-                Core product options for everyday safety and durable performance.
-              </h2>
-              <p className="mt-4 text-base leading-8 text-black/68 md:text-lg">
-                Each category is presented to help buyers quickly identify the right product type for
-                residential, water pump, and appliance-focused applications.
-              </p>
-            </div>
-
-            <div className="grid gap-8 xl:grid-cols-3">
-              {products.map((product, index) => (
-                <article
-                  key={product.name}
-                  className="overflow-hidden rounded-[2rem] border border-black/6 bg-white shadow-soft"
-                >
-                  <div className="relative h-60 w-full md:h-72">
-                    <Image
-                      src={product.image}
-                      alt={product.imageAlt}
-                      fill
-                      sizes="(max-width: 1280px) 100vw, 33vw"
-                      className="object-cover"
-                    />
-                  </div>
-                  <div className="p-7">
-                    <div className="inline-flex rounded-2xl bg-brand-red/10 p-3 text-brand-red">
-                      {index === 1 ? (
-                        <ShieldIcon className="h-6 w-6" />
-                      ) : (
-                        <CableIcon className="h-6 w-6" />
-                      )}
-                    </div>
-                    <h2 className="mt-6 text-2xl font-extrabold text-brand-charcoal">{product.name}</h2>
-                    <p className="mt-4 text-base leading-8 text-black/65">{product.description}</p>
-                    <div className="mt-6 space-y-3">
-                      {product.points.map((point) => (
-                        <div key={point} className="flex items-start gap-3">
-                          <div className="mt-1 rounded-full bg-brand-red/10 p-2 text-brand-red">
-                            <CheckIcon className="h-4 w-4" />
-                          </div>
-                          <p className="text-sm leading-7 text-black/70">{point}</p>
-                        </div>
-                      ))}
-                    </div>
-                    <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-                      <PrimaryButton href="/#contact">Get Quote</PrimaryButton>
-                      <SecondaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20want%20details%20about%20this%20product.">
-                        Enquire Now
-                      </SecondaryButton>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </Container>
-        </section>
       </main>
       <Footer />
       <WhatsAppButton />

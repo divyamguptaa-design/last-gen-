@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import { ContactInquiryForm } from "@/components/contact-inquiry-form";
 import { Footer } from "@/components/footer";
 import { CheckIcon, ChatIcon, FactoryIcon } from "@/components/icons";
 import { SiteNavbar } from "@/components/site-navbar";
@@ -86,22 +85,7 @@ export default function ContactPage() {
         </section>
 
         <section className="py-20 md:py-24">
-          <Container className="grid gap-8 lg:grid-cols-[1.05fr_0.95fr]">
-            <div className="rounded-[2rem] border border-black/6 bg-white p-7 shadow-soft md:p-8">
-              <p className="text-sm font-bold uppercase tracking-[0.24em] text-brand-red">
-                Inquiry Form
-              </p>
-              <h2 className="mt-3 text-3xl font-extrabold text-brand-charcoal">
-                Tell us what you need
-              </h2>
-              <p className="mt-4 max-w-2xl text-base leading-8 text-black/65">
-                Use this simple form layout as a contact touchpoint for product, dealership, and
-                project inquiries. It is designed for clarity and quick submission.
-              </p>
-
-              <ContactInquiryForm />
-            </div>
-
+          <Container>
             <div className="space-y-5">
               {supportCards.map((card) => (
                 <article

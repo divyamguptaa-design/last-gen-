@@ -26,6 +26,7 @@ export function Footer() {
             <div className="mt-4 flex flex-col gap-3 text-base font-semibold text-brand-charcoal">
               <Link href="/#solution">Why Gen-5</Link>
               <Link href="/products">Products</Link>
+              <Link href="/faq">FAQ</Link>
               <Link href="/contact">Contact</Link>
             </div>
           </div>
@@ -44,7 +45,7 @@ export function Footer() {
               <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">
                 LinkedIn
               </a>
-              <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/gen_5.in/" target="_blank" rel="noreferrer">
                 Instagram
               </a>
               <a href="https://wa.me/919315946113?text=Hello%20Gen-5" target="_blank" rel="noreferrer">

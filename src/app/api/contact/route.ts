@@ -10,7 +10,7 @@ type InquiryPayload = {
   requirement?: string;
 };
 
-const SPREADSHEET_ID = "1wKnJkfQbKlhcKnD3MoqDe3iEEgHaHGupy2qYduqthZc";
+const SPREADSHEET_ID = "1eL09JcNnQlMuVVg1myVKFYYw2JjLu6z63Xa_gb8eR0Q";
 const DEFAULT_RANGE = "Sheet1!A:G";
 
 export async function POST(request: Request) {

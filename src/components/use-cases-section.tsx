@@ -69,7 +69,9 @@ export function UseCasesSection() {
           ))}
         </div>
 
-        <PrimaryButton href="#contact">Request Project Pricing</PrimaryButton>
+        <PrimaryButton href="https://wa.me/919315946113?text=Hello%20Gen-5%2C%20I%20want%20project%20pricing.">
+          Request Project Pricing
+        </PrimaryButton>
       </Container>
     </section>
   );

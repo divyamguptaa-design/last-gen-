@@ -9,6 +9,7 @@ import { Container, PrimaryButton } from "@/components/ui";
 const navLinks = [
   { label: "Home", href: "/" },
   { label: "Products", href: "/products" },
+  { label: "FAQ", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
 
